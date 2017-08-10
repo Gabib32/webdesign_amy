@@ -1,3 +1,5 @@
+@import url("fonts.css");
+
 body {
   margin-top: 50px;
 }
@@ -10,40 +12,66 @@ body {
   -o-background-size: cover;
 }
 
+
+
+/* NAVIGATION */
+/*#nav-placeholder {
+}*/
+
 .navbar-default {
-  padding: 20px 20px 20px 20px;
+  /*padding: 20px 20px 20px 20px;*/
+  padding-top: 20px;
   background-color: transparent;
   background: transparent;
   border-color: transparent;
   background-image: none;
 }
 
+/* brand text*/
 .navbar-default .navbar-brand {
-  font-family: CenturyGothic;
+  font-family: 'gothic';
   font-size: 36px;
   font-weight: bold;
   color: #000000;
 }
 
+/* navbar text */
 .navbar-default .nav li a {
-  font-family: "Century Gothic";
+  font-family: "gothic";
   letter-spacing: 1px;
   font-size: 18px;
-  color: #555555;
+  color: #333333;
 }
 
-.navbar-default .nav li a:hover, .navbar-custom .nav li a:focus {
+/* text for navbar on hover*/
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
   color: #FFFF00;
   outline: none;
 }
 
-.navbar-default .navbar-nav>.active>a {
-  border-radius: 0;
-  color: white;
-  background-color: #fed136;
+/* entire dropdown-menu formatting */
+.navbar-nav > li:hover > .dropdown-menu {
+  display: block;
+  align-items: left;
+  background: #FFFFFF;
+  border: #000000;
+  /*box-shadow: none;*/
 }
 
+/* item specific in dropdown-menu on hover */
+.navbar-default .dropdown-menu li a:hover {
+  background-color: transparent;
+}
+
+/*
+
+.navbar-default .navbar-nav>.active>a {
+  border-radius: 0;
+  color: #FF0000;
+  background-color: #fed136;
+}
 .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
   color: white;
   background-color: #fec503;
-}
+}*/
