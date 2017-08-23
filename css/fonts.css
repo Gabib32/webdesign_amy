@@ -1,11 +1,4 @@
 @font-face {
-	font-family: 'gothic';
+	font-family: "gothic";
 	src: url("../fonts/gothic.woff") format('woff');
-
 }
-/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_9785">Text with this font applied</p> */
-/*.font_gothic {
-	font-family: 'gothic' !important;
-}*/
-
-/* Font downloaded from FontsForWeb.com */

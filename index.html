@@ -14,13 +14,16 @@
 
 	<!-- css -->
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="font.css">
+	<link rel="stylesheet" href="css/fonts.css">
 </head>
 
-<body class="full">
-	<div id="nav-placeholder">
-	</div>
+<body id="full-index" class="full">
 
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div id="nav-placeholder">
+
+		</div>
+	</nav>
 	<script>
 		$("#nav-placeholder").load("nav.html", function(response, status, xhr) {
 			if (status == "error") {
@@ -28,17 +31,11 @@
 				$("#nav-placeholder").html('<h3>' + msg + xhr.status + " " + xhr.statusText + '</h3>');
 			}
 		});
-		//
-		// $(document).ready(function() {
-		// 	$("nav > ul > li").mouseover(function() {
-		// 		var the_width = $(this).find("a").width();
-		// 		var child_width = $(this).find("ul").width();
-		// 		var width = parseInt((child_width - the_width) / 2);
-		// 		$(this).find("ul").css('left', -width);
-		// 	});
-		// });
 	</script>
 
+	<div class="footer">
+		Tenaya Lake | Yosemite National Parks
+	</div>
 </body>
 
 </html>

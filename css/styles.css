@@ -1,18 +1,35 @@
 @import url("fonts.css");
 
 body {
-  margin-top: 50px;
+  height: 100%;
+  margin-top: 120px;
+}
+
+#full-index {
+  background-image: url(../images/CoverImage.jpg);
+}
+
+#full-about {
+  background-image: url(../images/About.jpg);
 }
 
 .full {
-  background: url(../images/CoverImage.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#navbar-about {
+  background: rgba(255,255,255,0.0);
 }
 
 .navbar-default {
+  z-index: 400px;
+
   min-height: 120px;
   background: rgba(255,255,255,0.40);
   border-color: transparent;
@@ -103,4 +120,31 @@ body {
   margin-top: 22.5px;
   background: transparent;
   border-color: transparent;
+}
+
+.footer {
+  font-family: "gothic";
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+#about-header {
+  font-family: "gothic";
+  font-weight: bold;
+  color: #000000;
+}
+
+#about-content-section {
+  height: 420px;
+  width: 450px;
+  margin: 20px 20px 20px 20px;
+}
+
+.about-content{
+  font-size: 16px;
+  font-family: "gothic";
+  color: #000000;
 }
