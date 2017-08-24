@@ -23,8 +23,6 @@
 }
 
 .navbar-default {
-  z-index: 400px;
-
   min-height: 120px;
   background: rgba(255,255,255,0.40);
   border-color: transparent;
@@ -64,6 +62,10 @@
   top: -7px;
 }
 
+#nav-black {
+  color: #000000;
+}
+
 /* navbar text */
 .navbar-default .nav li a {
   font-family: "gothic";
@@ -71,7 +73,7 @@
   letter-spacing: 1px;
   font-size: 24px;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 /* text for navbar on hover*/
@@ -81,7 +83,6 @@
   font-weight: bold;
   outline: none;
   text-decoration: underline;
-  /*border-bottom: 2px solid;*/
 }
 
 .navbar-default .nav .dropdown-menu > li a {
@@ -108,6 +109,15 @@
   background-color: transparent;
   text-decoration: underline;
   /*border-bottom: 1.5px solid;*/
+}
+
+#socialmedia-black {
+  color: #000000;
+}
+
+.socialmedia-div {
+  margin-right: 20px;
+  float: right;
 }
 
 /* navbar-devault top margin is 15px */
