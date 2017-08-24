@@ -14,55 +14,53 @@
 
 	<!-- css -->
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link href="css/about_styles.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/fonts.css">
 
 </head>
 
 <body id="full-about" class="full">
+	<div class="transparent-background">
+		<nav id="navbar-about" class="navbar navbar-default navbar-static-top">
+			<div id="nav-placeholder"></div>
+		</nav>
 
-	<nav id="navbar-about" class="navbar navbar-default navbar-fixed-top">
-		<div id="nav-placeholder">
+		<script>
+			$("#nav-placeholder").load("nav-black.html", function(response, status, xhr) {
+				if (status == "error") {
+					var msg = "Sorry but there was an error with navbar: ";
+					$("#nav-placeholder").html('<h3>' + msg + xhr.status + " " + xhr.statusText + '</h3>');
+				}
+			});
+		</script>
 
+		<div class="container">
+			<div class="row" id="about-row">
+				<div class="col-lg-6">
+					<h1 id=about-header>Hey there, I’m Amy </h1>
+
+					<p id=about-content>
+						I am trained in architecture with backgrounds in environmental and educational design. I have found that architecture has the ability to be literal in its meaningfullness when it is guided with careful thought and hands.
+					</p>
+
+					<p id=about-content>
+						I am a recent graduate from the University of Oregon with a masters in architecture and a specialization in sustainable urban design. Previously, I pursued by undergraduate degree at Roger Williams University in architecture with concentrations in sustainability,
+						and art & architectural history.
+					</p>
+
+					<p id=about-content>
+						When I am not in an office one can find me running trails on the hottest days, snowboarding Mt. Hood when it’s cold, or patiently stippling away in a sketch book. I look forward to connecting and can guarantee we will get along if you are a fan of punny
+						jokes.
+					</p>
+					<img src="images/signature_amy.png" id="about_sig" class="img-responsive">
+				</div>
+				<div class="col-lg-6">
+					<img src="images/about_photo.jpg" id="about_img" class="img-responsive">
+					<a id="about_resume" href="AmyCripps_Resume.pdf" target="_blank">Click to view my resume</a>
+				</div>
+			</div>
+		</div>
 	</div>
-</nav>
-
-	<script>
-		$("#nav-placeholder").load("nav-black.html", function(response, status, xhr) {
-			if (status == "error") {
-				var msg = "Sorry but there was an error with navbar: ";
-				$("#nav-placeholder").html('<h3>' + msg + xhr.status + " " + xhr.statusText + '</h3>');
-			}
-		});
-	</script>
-
-<div id="about-content-section">
-
-	<h1 id=about-header>Hey there, I’m Amy </h1>
-
-	<p class=about-content>
-		I am trained in architecture with backgrounds in envi-
-		ronmental and educational design. I have found that
-		architecture has the ability to be literal in its meaningfull-
-		ness when it is guided with careful thought and hands.
-	</p>
-
-	<p class=about-content>
-		I am a recent graduate from the University of Oregon
-		with a masters in architecture and a specialization in
-		sustainable urban design. Previously, I pursued by under-
-		graduate degree at Roger Williams University in archi-
-		tecture with concentrations in sustainability, and art &
-		architectural history.
-	</p>
-
-	<p class=about-content>
-		When I am not in an office one can find me running
-		trails on the hottest days, snowboarding Mt. Hood when
-		it’s cold, or patiently stippling away in a sketch book.
-		I look forward to connecting and can guarantee we will
-		get along if you are a fan of punny jokes.
-	</p>
-</div>
 
 
 </body>

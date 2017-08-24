@@ -1,10 +1,5 @@
 @import url("fonts.css");
 
-body {
-  height: 100%;
-  margin-top: 120px;
-}
-
 #full-index {
   background-image: url(../images/CoverImage.jpg);
 }
@@ -129,22 +124,4 @@ body {
   right: 0;
   margin-bottom: 20px;
   margin-right: 20px;
-}
-
-#about-header {
-  font-family: "gothic";
-  font-weight: bold;
-  color: #000000;
-}
-
-#about-content-section {
-  height: 420px;
-  width: 450px;
-  margin: 20px 20px 20px 20px;
-}
-
-.about-content{
-  font-size: 16px;
-  font-family: "gothic";
-  color: #000000;
 }
