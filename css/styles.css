@@ -8,6 +8,18 @@
   background-image: url(../images/About.jpg);
 }
 
+#full-space {
+  background-image: url(../../images/Design_Spaces.jpg);
+}
+
+#full-graphics {
+  background-image: url(../../images/Design_Graphics.png);
+}
+
+#full-craft {
+  background-image: url(../../images/Design_Craft.png);
+}
+
 .full {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -127,7 +139,7 @@
   border-color: transparent;
 }
 
-.footer {
+.footer-index {
   font-family: "gothic";
   position: fixed;
   bottom: 0;

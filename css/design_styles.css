@@ -1,0 +1,15 @@
+@import url("styles.css");
+
+.design-footer {
+  font-family: "gothic";
+  color: #FFFFFF;
+  font-size: 24px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  padding-left: 20px;
+  padding-top: 20px;
+  background: rgba(255,255,255,0.3);
+}
