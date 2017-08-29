@@ -43,3 +43,16 @@
   padding-top: 20px;
   background: rgba(255, 255, 255, 0.3);
 }
+
+@media only screen and (max-width: 650px) {
+  .transparent-background {
+    height: inherit;
+  }
+  .container {
+    height: 100vh;
+  }
+
+  .container img {
+    height: 10px;
+  }
+}

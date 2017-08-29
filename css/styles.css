@@ -20,6 +20,10 @@
   background-image: url(../../images/Design_Craft.png);
 }
 
+#full-connect {
+  background-image: url(../../images/Lets_connect.jpg);
+}
+
 .full {
   -webkit-background-size: cover;
   -moz-background-size: cover;
