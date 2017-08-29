@@ -1,10 +1,5 @@
 @import url("styles.css");
 
-.transparent-background {
-  height: 100vh;
-  background: rgba(255,255,255,0.8);
-}
-
 #about-header {
   margin-top: -1px;
   font-family: "gothic";

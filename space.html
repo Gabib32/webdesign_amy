@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+
+
+	<!-- css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link href="css/design_styles.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" src="plugins/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css" />
+
+</head>
+
+<body id="full-space" class="full">
+	<div class="transparent-background">
+		<nav class="navbar navbar-default navbar-static-top">
+			<div id="nav-placeholder"></div>
+		</nav>
+
+		<script type="text/javascript">
+			// Load navbar
+			$("#nav-placeholder").load("nav-black.html", function(response, status, xhr) {
+				if (status == "error") {
+					var msg = "Sorry but there was an error with navbar: ";
+					$("#nav-placeholder").html('<h3>' + msg + xhr.status + " " + xhr.statusText + '</h3>');
+				}
+			});
+		</script>
+
+		<div class="container">
+			<div class="slick-data">
+				<div><img src="images/Design_Spaces_thumbnail.jpg" alt="Spaces"></div>
+				<div><img src="images/Design_arthouse_front.jpg" alt="Art House Front"></div>
+				<div><img src="images/Design_pies-descalzos_outdoorplay.jpg" alt="Pies Descalzos"></div>
+				<div><img src="images/img1.jpg" alt=""></div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.slick-data').slick({
+					centerMode: true,
+					centerPadding: '300px',
+					infinite: false,
+					slidesToShow: 1
+
+					// prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+					// nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+
+				});
+			});
+		</script>
+
+		<div class="design-footer">
+			<b>Design</b> | Space
+		</div>
+	</div>
+
+</body>
+
+</html>
