@@ -23,6 +23,10 @@ app.get('/about', function(req, res) {
   res.sendFile(path.join(__dirname + '/about.html'));
 });
 
+app.get('/design', function(req, res) {
+  res.sendFile(path.join(__dirname + '/design.html'));
+});
+
 app.get('/space', function(req, res) {
   res.sendFile(path.join(__dirname + '/space.html'));
 });
