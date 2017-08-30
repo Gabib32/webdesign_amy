@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link href="css/map_styles.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/fonts.css">
+
+</head>
+
+<body id="full-connect" class="full">
+	<div class="transparent-background">
+		<nav class="navbar navbar-default navbar-static-top">
+			<div id="nav-placeholder"></div>
+		</nav>
+
+		<script type="text/javascript">
+			// Load navbar
+			$("#nav-placeholder").load("nav-black.html", function(response, status, xhr) {
+				if (status == "error") {
+					var msg = "Sorry but there was an error with navbar: ";
+					$("#nav-placeholder").html('<h3>' + msg + xhr.status + " " + xhr.statusText + '</h3>');
+				}
+			});
+		</script>
+
+		<div class="container" align="center">
+			<h2 id="connect-header">Where About</h2>
+			<div id="googlemap"></div>
+		</div>
+
+
+		<div class="design-footer">
+			<b>Design</b> | Space
+		</div>
+
+	</div>
+	<script>
+		function initMap() {
+			var portland = {
+				lat: 45.5230622,
+				lng: -122.67648150000002
+			};
+			var map = new google.maps.Map(document.getElementById('googlemap'), {
+				zoom: 5,
+				center: portland
+			});
+			var marker = new google.maps.Marker({
+				position: portland,
+				map: map
+			});
+		}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCijcSKb1YI3XSQTe6rI0tg93boNroRwwY&callback=initMap">
+	</script>
+
+</body>
+
+</html>
