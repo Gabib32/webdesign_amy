@@ -22,9 +22,13 @@
   width: 450px;
 }
 
-#submit-button {
+#sendEmailButton {
   width: 150px;
   background-color: #FFFFFF;
+}
+
+#sendEmailButton:hover {
+  color: #000000;
 }
 
 @media only screen and (max-width: 650px) {
