@@ -38,36 +38,40 @@
 		<div class="container" align="center">
 			<!-- <div class="container text-center pagination-centered"> -->
 			<h1 id="connect-header">Questions? Want to work together?</h1>
-			<form class="form-horizontal">
+			<form id="contact-form" class="form-horizontal" action="/sent" method="post">
 
 				<div class="form-group">
 					<div class="col-sm-8 col-sm-offset-2">
-						<input class="form-textbox form-control" type="text" placeholder="Name">
+						<input class="form-textbox form-control" type="text" placeholder="Name" name="name">
 					</div>
 				</div>
 
 				<div class="form-group">
 					<div class="col-sm-8 col-sm-offset-2">
-						<input class="form-textbox form-control" type="text" placeholder="Email">
+						<input class="form-textbox form-control" type="text" placeholder="Email" name="email">
 					</div>
 				</div>
 
 				<div class="form-group">
 					<div class="col-sm-8 col-sm-offset-2">
-						<input class="form-textbox form-control" type="text" placeholder="Subject">
+						<input class="form-textbox form-control" type="text" placeholder="Subject" name="subject">
 					</div>
 				</div>
 
 				<div class="form-group">
 					<div class="col-sm-8 col-sm-offset-2">
-						<textarea class="form-textbox form-control" rows="5" placeholder="Message"></textarea>
+						<textarea class="form-textbox form-control" rows="5" placeholder="Message" name="message"></textarea>
 					</div>
 				</div>
 
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-8">
-						<button id="submit-button" class="btn btn-primary form-textbox">submit</button>
+						<button id="sendEmailButton" type="submit" class="btn btn-primary form-textbox" onclick="post">submit</button>
 					</div>
+				</div>
+
+				<div id="output">
+
 				</div>
 			</form>
 		</div>
